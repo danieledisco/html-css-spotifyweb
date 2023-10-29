@@ -17,10 +17,16 @@
         --spotify-color-accent: #b6fb30;
 }
 
-
-
-
-
+.big-container
+{
+        height: 100%;
+        width: 100%;
+}
+.header-main-footer
+{
+        height: 100%;
+        width: 100%;
+}
 
 /* #endregion common */
 
@@ -31,17 +37,69 @@
 
 
 /* #region utility functions */
+.d-flex
+{
+        display: flex;
+}
+
+
+
+
+
 
 /* #endregion utility functions */
 
 /* #region utility header */
+header
+{
+   height: 5rem;
+   background-color: var(--spotify-color-header);
+   width: 100%;
+}
+
+
+
 
 /* #endregion utility header */
 
 /* #region utility main */
 
+main
+{
+        height: calc(100vh - 5rem - 5rem);
+        background-color: var(--spotify-color-main);
+        width: 100%;
+        color: white;
+}
+
+
+
+
 /* #endregion utility main */
 
 /* #region utility footer */
+footer
+{
+        height: 5rem;
+        background-color: var(--spotify-color-footer);
+        margin-left: -13rem;
+}
+
+
+
+
+/* #endregion utility footer */
+
+/* #region utility footer */
+.sidebar
+{
+ 
+        width: 13rem;
+        height: calc(100vh - 5rem);
+        background-color: var(--spotify-color-black);
+}
+
+
+
 
 /* #endregion utility footer */
