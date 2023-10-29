@@ -1,0 +1,47 @@
+/* #region common */
+
+*
+{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+}
+
+:root
+{
+        --spotify-color-header: #080b12;
+        --spotify-color-black: black;
+        --spotify-color-white: white;
+        --spotify-color-footer: #282828;
+        --spotify-color-main: #141922;
+        --spotify-color-accent: #b6fb30;
+}
+
+
+
+
+
+
+/* #endregion common */
+
+/* #region utility layout */
+
+
+/* #endregion utility layout */
+
+
+/* #region utility functions */
+
+/* #endregion utility functions */
+
+/* #region utility header */
+
+/* #endregion utility header */
+
+/* #region utility main */
+
+/* #endregion utility main */
+
+/* #region utility footer */
+
+/* #endregion utility footer */
