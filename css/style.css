@@ -15,6 +15,7 @@
         --spotify-color-footer: #282828;
         --spotify-color-main: #141922;
         --spotify-color-accent: #b6fb30;
+        --spotify-color-gray-text: #bbbbbb;
 }
 
 .big-container
@@ -28,6 +29,16 @@
         width: 100%;
 }
 
+body
+{
+        font-family: 'Montserrat', sans-serif;
+}
+
+/* img
+{
+        width: 100%
+} */
+
 /* #endregion common */
 
 /* #region utility layout */
@@ -35,14 +46,58 @@
 
 /* #endregion utility layout */
 
-
 /* #region utility functions */
 .d-flex
 {
         display: flex;
 }
 
+.black-text
+{
+        color: var(--spotify-color-black);
+}
 
+.white-text
+{
+        color: var(--spotify-color-white);
+}
+
+.gray-text
+{
+        color: var(--spotify-color-gray-text);
+}
+.align-items-center
+{
+        align-items: center;
+}
+.text-align-center
+{
+        text-align: center;
+}
+
+/* Padding vertical top e bottom */
+.pY-1
+{
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+}
+
+.pY-1_5
+{
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+}
+
+/* Padding left */
+.pL-1
+{
+        padding-left: 1rem;
+}
+
+.pL-1_5
+{
+        padding-left: 1.5rem;
+}
 
 
 
@@ -56,8 +111,6 @@ header
    background-color: var(--spotify-color-header);
    width: 100%;
 }
-
-
 
 
 /* #endregion utility header */
@@ -90,16 +143,72 @@ footer
 
 /* #endregion utility footer */
 
-/* #region utility footer */
+/* #region utility sidebar */
 .sidebar
 {
- 
         width: 13rem;
         height: calc(100vh - 5rem);
         background-color: var(--spotify-color-black);
 }
+.container-sb
+{
+        height: 100%;
+        width: 80%;
+        margin: auto;
+}
+.logo
+{
+        padding: 1rem;
+}
+
+.home
+{
+        font-size: 0.7rem;
+        padding: 1rem;
+        border-left: 4px solid var(--spotify-color-accent);
+        & .label
+        {
+                padding-left: 0.5rem;
+        }
+}
+.find 
+{
+        font-size: 0.7rem;
+        padding: 0.5rem 1.1rem;
+        & .label
+        {
+                padding-left: 0.5rem;
+        }
+}
+.myLybrary
+{
+        font-size: 0.7rem;
+        padding: 0.5rem 1.2rem;
+        & .label
+        {
+                padding-left: 0.5rem;
+        }
+}
+.plus
+{
+        background-color: var(--spotify-color-gray-text);
+        padding: 0.3rem;
+        margin-left: 1rem
+}
+.doPlaylist .label
+{
+        font-size: 0.9rem; 
+        padding-left: 0.5rem; 
+}
+.doPlaylist
+{
+        margin-bottom: 1rem;
+}
 
 
-
-
+.playListName
+{
+        font-size: 0.7rem;
+        padding: 0.5rem 1rem;
+}
 /* #endregion utility footer */
