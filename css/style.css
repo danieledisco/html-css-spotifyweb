@@ -15,7 +15,8 @@
         --spotify-color-footer: #282828;
         --spotify-color-main: #141922;
         --spotify-color-accent: #b6fb30;
-        --spotify-color-gray-text: #bbbbbb;
+        --spotify-color-gray-text: #6a6a6a;
+        --spotify-color-gray-home: #d2d2d2;
 }
 
 .big-container
@@ -23,6 +24,11 @@
         height: 100%;
         width: 100%;
 }
+.container-sb
+{
+        width: 15rem;
+}
+
 .header-main-footer
 {
         height: 100%;
@@ -146,9 +152,11 @@ footer
 /* #region utility sidebar */
 .sidebar
 {
-        width: 13rem;
+        width: 15rem;
         height: calc(100vh - 5rem);
         background-color: var(--spotify-color-black);
+        overflow-y: auto;
+        overflow-x: hidden;
 }
 .container-sb
 {
@@ -158,6 +166,7 @@ footer
 }
 .logo
 {
+        width: 13rem;
         padding: 1rem;
 }
 
@@ -170,6 +179,10 @@ footer
         {
                 padding-left: 0.5rem;
         }
+}
+.home .svg-div
+{
+        color: red;
 }
 .find 
 {
@@ -210,5 +223,50 @@ footer
 {
         font-size: 0.7rem;
         padding: 0.5rem 1rem;
+}
+
+.line
+ {
+        position: fixed;
+        bottom: 7.5rem;
+        left: 1rem;
+        width: 11rem;
+        height: 1;
+        border: 1px solid var(--spotify-color-gray-text);
+        background-color: rgba(0,0,0,1);
+        margin: auto;
+        margin-top: 0.25rem;
+        margin-bottom: 0.25rem;;
+ }
+.round-image
+{
+        height: 20px;
+        width: 20px;
+        background-color: var(--spotify-color-gray-text);
+        border-radius: 50%;
+}
+.user
+{
+        position: fixed;
+        bottom: 5rem;
+        font-size: 0.7rem;
+        padding: 0.5rem 1rem;
+        & .label
+        {
+                padding-left: 0.5rem;
+        }
+        background-color: rgba(0,0,0,1);
+}
+.app
+{
+        position: fixed;
+        bottom: 8rem;
+        font-size: 0.7rem;
+        padding: 0.5rem 1rem;
+        & .label
+        {
+                padding-left: 0.5rem;
+        }
+        background-color: rgba(0,0,0,1);
 }
 /* #endregion utility footer */
