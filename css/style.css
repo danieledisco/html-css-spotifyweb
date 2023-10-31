@@ -36,6 +36,9 @@ body
         font-family: 'Montserrat', sans-serif;
 }
 
+
+
+
 /* img
 {
         width: 100%
@@ -48,6 +51,10 @@ body
 /* #endregion utility layout */
 
 /* #region utility functions */
+
+
+
+
 .d-flex
 {
         display: flex;
@@ -74,6 +81,11 @@ body
 .text-align-center
 {
         text-align: center;
+}
+
+.justify-content-end
+{
+        justify-content: flex-end;
 }
 
 /* Padding vertical top e bottom */
@@ -112,7 +124,21 @@ header
    background-color: var(--spotify-color-header);
    width: 100%;
 }
-
+.container-header
+{
+        width: 100%;
+        height: 100%;
+}
+.btn
+{
+        font-size: 0.7rem;
+        padding: 0.5rem 2rem;
+        border: 1px solid var(--spotify-color-white);
+        border-radius: 2rem;
+        color: var(--spotify-color-white);
+        background-color: transparent;
+        margin-right: 0.75rem;
+}
 
 /* #endregion header */
 
