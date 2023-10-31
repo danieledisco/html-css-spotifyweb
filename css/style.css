@@ -16,6 +16,7 @@
         --spotify-color-main: #141922;
         --spotify-color-accent: #b6fb30;
         --spotify-color-gray-text: #6a6a6a;
+        --spotify-color-gray-text-main: #787a7f;
         --spotify-color-gray-home: #d2d2d2;
 }
 
@@ -28,7 +29,7 @@
 .header-main-footer
 {
         height: 100%;
-        width: 100%;
+        width: calc(100% - 15rem);
 }
 
 body
@@ -47,6 +48,21 @@ body
 /* #endregion common */
 
 /* #region utility layout */
+
+.cols-6
+{
+        width: calc( 100% / 6 );
+}
+
+
+
+
+
+
+
+
+
+
 
 /* #endregion utility layout */
 
@@ -74,6 +90,10 @@ body
 {
         color: var(--spotify-color-gray-text);
 }
+.gray-text-main
+{
+        color: var(--spotify-color-gray-text-main);
+}
 .align-items-center
 {
         align-items: center;
@@ -86,6 +106,14 @@ body
 .justify-content-end
 {
         justify-content: flex-end;
+}
+.justify-content-center
+{
+        justify-content: center;
+}
+.justify-content-space-between
+{
+        justify-content: space-between;
 }
 
 /* Padding vertical top e bottom */
@@ -122,7 +150,7 @@ header
 {
    height: 5rem;
    background-color: var(--spotify-color-header);
-   width: 100%;
+   width: calc100%;
 }
 .container-header
 {
@@ -151,10 +179,27 @@ main
         width: 100%;
         color: white;
 }
+.action
+{
+        font-size: 0.7rem;
+        padding: 1rem 1rem 0.5rem
+ 
+}
 
 
-
-
+.sub-line-green
+{
+        position: absolute;
+        height: 1px;
+        width: 30px;
+        border: 1.5px solid var(--spotify-color-accent);
+        left: 38px;
+        top: 35px;
+}
+.accent
+{
+        position: relative;
+}
 /* #endregion main */
 
 /* #region footer */
@@ -162,7 +207,7 @@ footer
 {
         height: 5rem;
         background-color: var(--spotify-color-footer);
-        margin-left: -13rem;
+        margin-left: -15rem;
 }
 
 
@@ -252,7 +297,7 @@ footer
         padding: 0.5rem 1rem;
 }
 
-.line
+.sub-line-gray
  {
         position: fixed;
         bottom: 7.5rem;
