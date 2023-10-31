@@ -47,25 +47,6 @@ body
 
 /* #endregion common */
 
-/* #region utility layout */
-
-.cols-6
-{
-        width: calc( 100% / 6 );
-}
-
-
-
-
-
-
-
-
-
-
-
-/* #endregion utility layout */
-
 /* #region utility functions */
 
 
@@ -177,7 +158,6 @@ main
         height: calc(100vh - 5rem - 5rem);
         background-color: var(--spotify-color-main);
         width: 100%;
-        color: white;
 }
 .action
 {
@@ -199,6 +179,71 @@ main
 .accent
 {
         position: relative;
+}
+
+.row
+{
+        display: flex;
+        flex-wrap: wrap;
+ /*        margin: 0 -1rem; */
+        margin: 0;
+}
+
+
+.col-2                                    /* 6 columns */
+{
+        width: calc( 100% / 12 * 2 );
+        /*border: 1px solid red; */
+}
+
+.col-3                                    /* 4 columns */
+{
+        width: calc( 100% / 12 * 3 );
+        border: 1px solid red;
+        height: 200px;
+}
+
+.col-6                                    /* 2 columns */
+{
+        width: calc( 100% / 12 * 6 );
+        border: 1px solid red;
+        height: 200px;
+}
+
+.col-12                                   /* 1 column */
+{
+        width: 100%;
+        border: 1px solid red;
+        height: 200px;;
+}
+
+[class^="col-"]
+{
+        padding: 1rem;
+}
+
+.section-title
+{
+        padding: 1.5rem 1rem;
+}
+
+.track img
+{
+        width: 100%;
+}
+.track-name
+{
+        padding-top: 1rem;
+        padding-bottom: 0.75rem;
+}
+.track-subtitle
+{
+        font-size: 0.7rem;
+}
+
+.explication
+{
+        font-size: 0.7rem;
 }
 /* #endregion main */
 
