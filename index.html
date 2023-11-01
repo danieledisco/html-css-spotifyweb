@@ -9,20 +9,23 @@
         <!-- Link for fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700&display=swap"
+                rel="stylesheet">
 
         <!-- link for css -->
         <link rel="stylesheet" href="./css/style.css">
 
         <!-- link for icons -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+                integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+                crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 
 <body>
 
         <div class="big-container d-flex justify-content-space-between">
-
+                <!-- #region sidebar -->
                 <div class="sidebar">
                         <div class="logo">
                                 <img src="./img/logo.svg" alt="Logo" width="119">
@@ -32,7 +35,7 @@
                                 <div class="icon gray-text">
                                         <i class="fa-solid fa-house"></i>
                                 </div>
-                                <div class="label white-text">Home</div>
+                                <div class="label white-text font-bold">Home</div>
                         </div>
                         <div class="find d-flex align-items-center">
                                 <div class="icon gray-text">
@@ -54,25 +57,25 @@
                                 <div class="label gray-text">Crea playlist</div>
                         </div>
                         <div class="playListName gray-text">
-                                Nome playlist 
+                                Nome playlist
                         </div>
                         <div class="playListName gray-text">
-                                Nome playlist 
+                                Nome playlist
                         </div>
                         <div class="playListName gray-text">
-                                Nome playlist 
+                                Nome playlist
                         </div>
                         <div class="playListName gray-text">
-                                Nome playlist 
+                                Nome playlist
                         </div>
                         <div class="playListName gray-text">
-                                Nome playlist 
+                                Nome playlist
                         </div>
                         <div class="playListName gray-text">
-                                Nome playlist 
+                                Nome playlist
                         </div>
                         <div class="playListName gray-text">
-                                Nome playlist 
+                                Nome playlist
                         </div>
 
                         <div class="line"></div>
@@ -81,8 +84,8 @@
                                 <div class="round-image">
                                         <img src="./img/profile.svg" alt="User" width="15">
                                 </div>
-                                
-                                <div class="label white-text">John Doe</div>
+
+                                <div class="label white-text font-bold">John Doe</div>
                         </div>
 
                         <div class="app d-flex align-items-center text-align-center">
@@ -90,8 +93,8 @@
                                         <i class="fa-regular fa-circle-down"></i>
                                 </div>
                                 <div class="label gray-text">Installa app</div>
-                                <div class="sub-line-gray"></div>                                  
-                               
+                                <div class="sub-line-gray"></div>
+
                         </div>
 
 
@@ -99,15 +102,16 @@
 
 
                 </div>
-                <div class="header-main-footer">
+                <!-- #endregion sidebar -->
 
+                <div class="header-main-footer">
                         <!-- #region HEADER -->
                         <header id="header-site">
-                                <div class="container-header d-flex align-items-center justify-content-end">
+                                <div class="container-header-footer d-flex align-items-center justify-content-end">
                                         <div class="upgrade">
                                                 <button class="btn white-text">
                                                         EFFETTUA L'UPGRADE
-                                                </button>        
+                                                </button>
                                         </div>
                                 </div>
 
@@ -116,6 +120,7 @@
 
                         <!-- #region MAIN -->
                         <main id="main-site">
+
                                 <!-- #region sub header -->
                                 <div class="container d-flex justify-content-center">
                                         <div class="action gray-text-main accent">
@@ -126,13 +131,14 @@
                                         <div class="action gray-text-main">CLASSIFICHE</div>
                                         <div class="action gray-text-main">GENERI E MOOD</div>
                                         <div class="action gray-text-main">NUOVE USCITE</div>
-                                        <div class="action gray-text-main">SCOPRI</div>                                     
+                                        <div class="action gray-text-main">SCOPRI</div>
                                 </div>
                                 <!-- #endregion sub header -->
 
                                 <!-- #region recently -->
                                 <div class="container">
                                         <h2 class="section-title white-text">Recently played</h2>
+                                        <div class="description gray-text-main"></div>
                                         <div class="row">
                                                 <div class="col-2">
                                                         <div class="track">
@@ -142,7 +148,8 @@
                                                                 <div class="track-name text-align-center white-text">
                                                                         <h3>Heavy Metal</h3>
                                                                 </div>
-                                                                <div class="track-subtitle text-align-center gray-text-main">
+                                                                <div
+                                                                        class="track-subtitle text-align-center gray-text-main">
                                                                         Subtitle
                                                                 </div>
                                                         </div>
@@ -153,10 +160,12 @@
                                                                         <img src="./img/stranger.jpeg">
                                                                 </div>
                                                                 <div class="track-name text-align-center white-text">
-                                                                        <h3>Stranger Things, Vol.1 (a Netflix Original Seies Soundtrack)</h3>
+                                                                        <h3>Stranger Things, Vol.1 (a Netflix Original
+                                                                                Seies Soundtrack)</h3>
                                                                 </div>
-                                                                <div class="track-subtitle text-align-center gray-text-main">
-                                                                       Kyle Dixon & Michael Stein
+                                                                <div
+                                                                        class="track-subtitle text-align-center gray-text-main">
+                                                                        Kyle Dixon & Michael Stein
                                                                 </div>
                                                         </div>
                                                 </div>
@@ -168,7 +177,8 @@
                                                                 <div class="track-name text-align-center white-text">
                                                                         <h3>A quiet place</h3>
                                                                 </div>
-                                                                <div class="track-subtitle text-align-center gray-text-main">
+                                                                <div
+                                                                        class="track-subtitle text-align-center gray-text-main">
                                                                         Subtitle
                                                                 </div>
                                                         </div>
@@ -181,7 +191,8 @@
                                                                 <div class="track-name text-align-center white-text">
                                                                         <h3>Split</h3>
                                                                 </div>
-                                                                <div class="track-subtitle text-align-center gray-text-main">
+                                                                <div
+                                                                        class="track-subtitle text-align-center gray-text-main">
                                                                         Subtitle
                                                                 </div>
                                                         </div>
@@ -194,7 +205,8 @@
                                                                 <div class="track-name text-align-center white-text">
                                                                         <h3>A cure for wellness</h3>
                                                                 </div>
-                                                                <div class="track-subtitle text-align-center gray-text-main">
+                                                                <div
+                                                                        class="track-subtitle text-align-center gray-text-main">
                                                                         Subtitle
                                                                 </div>
                                                         </div>
@@ -207,7 +219,8 @@
                                                                 <div class="track-name text-align-center white-text">
                                                                         <h3>Sinister</h3>
                                                                 </div>
-                                                                <div class="track-subtitle text-align-center gray-text-main">
+                                                                <div
+                                                                        class="track-subtitle text-align-center gray-text-main">
                                                                         Subtitle
                                                                 </div>
                                                         </div>
@@ -220,17 +233,112 @@
                                 <!-- #region created -->
                                 <div class="container">
                                         <h2 class="section-title white-text">Creato per John Doe</h2>
-                                        <div class="explication gray-text-main">Più ascoltati, più accurati saranno i suggerimenti.</div>
-
+                                        <div class="description gray-text-main">Più ascoltati, più accurati saranno i
+                                                suggerimenti.</div>
+                                        <div class="row">
+                                                <div class="col-2">
+                                                        <div class="track">
+                                                                <div class="track-image">
+                                                                        <img src="./img/radar.jpeg">
+                                                                </div>
+                                                                <div class="track-name text-align-center white-text">
+                                                                        <h3>Release radar</h3>
+                                                                </div>
+                                                                <div
+                                                                        class="track-subtitle text-align-center gray-text-main">
+                                                                </div>
+                                                        </div>
+                                                </div>
+                                                <div class="col-2">
+                                                        <div class="track">
+                                                                <div class="track-image">
+                                                                        <img src="./img/mixdaily.jpeg">
+                                                                </div>
+                                                                <div class="track-name text-align-center white-text">
+                                                                        <h3>Daily Mix 1</h3>
+                                                                </div>
+                                                                <div
+                                                                        class="track-subtitle text-align-center gray-text-main">
+                                                                </div>
+                                                        </div>
+                                                </div>
+                                        </div>
                                 </div>
 
-                                <!-- #end region created -->
+                                <!-- #endregion created -->
+
+                                <!-- #region pop -->
+                                <div class="container">
+                                        <h2 class="section-title white-text">Artisti più popolari</h2>
+                                        <div class="description gray-text-main">Più ascoltati, più accurati saranno i
+                                                suggerimenti.</div>
+                                        <div class="row">
+                                                <div class="col-2">
+                                                        <div class="track">
+                                                                <div class="track-image">
+                                                                        <img src="./img/youg.jpeg">
+                                                                </div>
+                                                                <div class="track-name text-align-center white-text">
+                                                                        <h3>Lana del Rey</h3>
+                                                                </div>
+                                                                <div
+                                                                        class="track-subtitle text-align-center gray-text-main">
+                                                                </div>
+                                                        </div>
+                                                </div>
+                                                <div class="col-2">
+                                                        <div class="track">
+                                                                <div class="track-image">
+                                                                        <img src="./img/einaudi.jpeg">
+                                                                </div>
+                                                                <div class="track-name text-align-center white-text">
+                                                                        <h3>Ludovico Einaudi</h3>
+                                                                </div>
+                                                                <div
+                                                                        class="track-subtitle text-align-center gray-text-main">
+                                                                </div>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                </div>
+                                <!-- #endregion poo -->
                         </main>
                         <!-- #endregion MAIN -->
 
                         <!-- #region FOOTER -->
                         <footer id="footer-site">
+                                <div
+                                        class="container-header-footer  d-flex align-items-center justify-content-space-between">
+                                        <div class="footer-left d-flex align-items-center">
+                                                <div class="track-image-footer">
+                                                        <img src="./img/sinister.jpeg" width="30">
+                                                </div>
+                                                <div class="track-name-footer white-text font-bold">
+                                                        Sinister
+                                                        <p>Brano nome</p>
+                                                </div>
+                                                <div class="heart gray-text">
+                                                        <i class="fa-regular fa-heart"></i>
+                                                </div>
+                                                <div class="folder gray-text">
+                                                        <i class="fa-regular fa-folder"></i>
+                                                </div>
+                                        </div>
+                                        <div class="footer-center">
+                                                <div class="commands d-flex justify-content-center">
+                                                        <i class="fa-solid fa-shuffle white-text pL-1 pR-1"></i>
+                                                        <i class="fa-solid fa-backward-step white-text pL-1 pR-1"></i>
+                                                        <i class="fa-regular fa-circle-play white-text pL-1 pR-1"></i>
+                                                        <i class="fa-solid fa-forward-step white-text pL-1 pR-1"></i>
+                                                        <i class="fa-solid fa-rotate-right white-text pL-1 pR-1"></i>
+                                                </div>
 
+
+                                        </div>
+                                        <div class="footer-right">
+
+                                        </div>
+                                </div>
                         </footer>
                         <!-- #endregion FOOTER -->
                 </div>
