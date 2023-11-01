@@ -59,7 +59,10 @@ body
 {
         font-weight: bold;
 }
-
+.font-size-2
+{
+        font-size: 2rem;
+}
 
 .d-flex
 {
@@ -118,6 +121,13 @@ body
         padding-top: 1.5rem;
         padding-bottom: 1.5rem;
 }
+.pY-0_5
+{
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+}
+
+
 
 /* Padding left */
 .pL-1
@@ -310,6 +320,25 @@ footer
 {
         padding-left: 3.5rem;
 }
+.current-time, .total-time
+{
+        font-size: 0.5rem;
+}
+
+.box-time-current
+{
+        height: 2px;
+        width: 80px;
+        background-color: var(--spotify-color-white);
+}
+.box-time-to-the-end
+{
+        height: 2px;
+        width: 300px;
+        background-color: var(--spotify-color-gray-text);
+}
+
+
 
 
 /* #endregion utility footer */
