@@ -146,8 +146,20 @@ body
         padding-left: 1.5rem;
 }
 
+.pL-0_5
+{
+        padding-left: 0.5rem;
+}
 
+.pR-0_5
+{
+        padding-right: 0.5rem;
+}
 
+.pR-1_5
+{
+        padding-right: 1.5rem;
+}
 
 /* #endregion utility functions */
 
@@ -322,7 +334,7 @@ footer
 }
 .current-time, .total-time
 {
-        font-size: 0.5rem;
+        font-size: 0.6rem;
 }
 
 .box-time-current
@@ -337,7 +349,18 @@ footer
         width: 300px;
         background-color: var(--spotify-color-gray-text);
 }
-
+.sound-line-low
+{
+        height: 2px;
+        width: 30px;
+        background-color: var(--spotify-color-white);
+}
+.sound-line-hight
+{
+        height: 2px;
+        width: 80px;
+        background-color: var(--spotify-color-gray-text);
+ }
 
 
 
