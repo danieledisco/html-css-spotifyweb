@@ -1,0 +1,26 @@
+.btn:hover
+{
+        transform: scale(1.2);
+}
+
+.action:hover
+{
+        color: var(--spotify-color-white);
+}
+
+.label:hover + .icon
+{
+        color: var(--spotify-color-white);
+}
+
+
+.playListName:hover
+{
+        color: var(--spotify-color-white);
+}
+
+.doPlaylist .label:hover ~ .plus
+{
+        background-color: var(--spotify-color-white);
+}
+/*  */

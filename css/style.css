@@ -64,6 +64,11 @@ body
         font-size: 2rem;
 }
 
+.font-size-4
+{
+        font-size: 4rem;
+}
+
 .d-flex
 {
         display: flex;
@@ -108,7 +113,10 @@ body
 {
         justify-content: space-between;
 }
-
+.flex-wrap-wrap
+{
+        flex-wrap: wrap;
+}
 /* Padding vertical top e bottom */
 .pY-1
 {
@@ -168,7 +176,7 @@ header
 {
    height: 5rem;
    background-color: var(--spotify-color-header);
-   width: calc100%;
+   width: 100%;
 }
 
 .btn
@@ -179,7 +187,7 @@ header
         border-radius: 2rem;
         color: var(--spotify-color-white);
         background-color: transparent;
-        margin-right: 0.75rem;
+        margin-right: 1.5rem;
 }
 
 /* #endregion header */
@@ -233,21 +241,18 @@ main
 {
         width: calc( 100% / 12 * 3 );
         border: 1px solid red;
-        height: 200px;
 }
 
 .col-6                                    /* 2 columns */
 {
         width: calc( 100% / 12 * 6 );
         border: 1px solid red;
-        height: 200px;
 }
 
 .col-12                                   /* 1 column */
 {
         width: 100%;
         border: 1px solid red;
-        height: 200px;;
 }
 
 [class^="col-"]
@@ -260,6 +265,25 @@ main
         padding: 0.5rem 1rem;
 }
 
+.track-image
+{
+        position: relative;
+}
+.track-image .playhover
+{
+        position: absolute;
+        left: calc( ( 100% - 4rem ) / 2 );
+        top: calc( ( 100% - 4rem ) / 2 );
+        visibility: hidden;
+}
+
+img:hover + .playhover
+{
+        visibility: visible;        
+}
+
+
+
 .track img
 {
         width: 100%;
@@ -269,6 +293,10 @@ main
 {
         padding-top: 1rem;
         padding-bottom: 0.75rem;
+}
+.track-name h3
+{
+        font-size: 0.7rem;
 }
 .track-subtitle
 {
@@ -294,20 +322,17 @@ footer
 .footer-left
 {
         height: 100%;
-        flex-grow: 1;
-        border: 1px solid red;
+        width: 10%;
 }
 .footer-center
 {
         height: 100%;
-        flex-grow: 2;
-        border: 1px solid red;
+        width: 60%;
 }
 .footer-right
 {
         height: 100%;
-        flex-grow: 1;
-        border: 1px solid red;
+        width: 10%;
 }
 .track-image-footer
 {
@@ -340,13 +365,13 @@ footer
 .box-time-current
 {
         height: 2px;
-        width: 80px;
+        width: 5%;
         background-color: var(--spotify-color-white);
 }
 .box-time-to-the-end
 {
         height: 2px;
-        width: 300px;
+        width: 20%;
         background-color: var(--spotify-color-gray-text);
 }
 .sound-line-low
@@ -389,56 +414,83 @@ footer
 
 .home
 {
+        position: relative;
         border-left: 2px solid var(--spotify-color-accent);
         padding: 1rem;
-
-        & .icon
-        {
-                font-size: 1.4rem;
-        }  
-        & .label
-        {
-                font-size: 0.7rem;
-                padding-left: 0.5rem;
-        }
 }
+.home .icon
+{
+        position: absolute;
+        left: 1rem;
+        font-size: 1.4rem;
+}  
+.home .label
+{
+        position: absolute;
+        font-size: 0.7rem;
+        left: 3rem;
+}
+
 
 .find 
 {
-        padding: 0.5rem 1.2rem;
-        & .icon
-        {
-                font-size: 1.5rem
-        }
-        & .label
-        {
-                font-size: 0.7rem;
-                padding-left: 0.5rem;
-        }
+        position: relative;
+        padding: 1.5rem 1.2rem;
 }
+.find .icon
+{
+        position:absolute;
+        left: 1.3rem;
+        font-size: 1.5rem
+}
+.find .label
+{
+        position:absolute;
+        font-size: 0.7rem;
+        left: 3rem;
+}
+
 .myLybrary
 {
-        padding: 0.5rem 1.2rem;
-        & .label
-        {
-                font-size: 0.7rem;
-                padding-left: 0.5rem;
-        }
+        padding: 1rem 1.2rem;
+        position: relative;
 }
+
+.myLybrary .label
+{
+        position: absolute;
+        font-size: 0.7rem;
+        left: 3rem;
+}
+.myLybrary .icon
+{
+        font-size: 1.5rem;
+        position: absolute;
+        left: 1.3rem;
+}
+
+
+.doPlaylist
+{
+        margin-bottom: 1rem;
+        position: relative;
+        padding-top: 1rem;
+}
+
 .plus
 {
         background-color: var(--spotify-color-gray-text);
         padding: 0.3rem;
-        margin-left: 1rem
+        margin-left: 1rem;
+        position: absolute;
+        left: 0;
 }
 .doPlaylist .label
 {
         font-size: 0.9rem; 
         padding-left: 0.5rem; 
-}
-.doPlaylist
-{
-        margin-bottom: 1rem;
+        position: absolute;
+        left: 2.5rem
 }
 
 
@@ -498,3 +550,72 @@ footer
         }
 }
 /* #endregion sidebar */
+
+
+/* md */
+@media screen and (max-width: 950px)
+{
+        .col-3-md
+        {
+                width: calc( 100% / 12 * 3);
+                border: 1px solid greenyellow;
+        }
+
+}
+
+/* s */
+@media screen and (max-width: 667px)
+{
+        .col-6-s
+        {
+                width: calc( 100% / 12 * 6);
+                border: 1px solid red;
+        }
+}
+
+/* xs */
+@media screen and (max-width: 510px)
+{
+        .col-6-x
+        {
+                width: calc( 100% / 12 * 6);
+                border: 1px solid white;
+        }
+        .sidebar .label
+        {
+                display: none;
+        }
+        .sidebar .icon
+        {
+                display: none;
+        }
+        .sidebar img
+        {
+                display: none;
+        }
+        .sidebar .home
+        {
+                display: none;
+        }
+        .sidebar .playListName
+        {
+                display: none;
+        }
+                
+        .header-main-footer
+        {
+                width: calc(100% - 3rem);
+        }
+        footer .footer-left
+        {
+                width: calc( 100% / 3);
+        }
+        footer .footer-center
+        {
+                width: calc( 100% / 3);
+        }
+        footer .footer-right
+        {
+                width: calc( 100% / 3);
+        }
+}
