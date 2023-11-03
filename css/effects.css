@@ -68,7 +68,7 @@ img:hover + .playhover
 
 .footer-right .sound-line-low:hover + .fa-circle
 {
-        left: 50%;
+        right: 110px;
         color: var(--spotify-color-white); 
         visibility: visible;
         z-index: 100;    

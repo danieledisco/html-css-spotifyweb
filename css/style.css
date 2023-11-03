@@ -325,17 +325,22 @@ footer
 .footer-left
 {
         height: 100%;
-        width: 10%;
+        width: 30%;
+        border: 1px solid white;
 }
 .footer-center
 {
         height: 100%;
-        width: 60%;
+        width: 40%;
+        position: relative;
+        border: 1px solid white;
 }
 .footer-right
 {
         height: 100%;
-        width: 10%;
+        width: 30%;
+        position: relative;
+        border: 1px solid white;
 }
 .track-image-footer
 {
@@ -343,22 +348,23 @@ footer
 }
 .track-name-footer
 {
-        font-size: 0.7rem;
+        font-size: var(--spotify-dimension-text);
         padding-left: 0.5rem;
         & p
         {
                 font-size: var(--spotify-dimension-text);
                 color: var(--spotify-color-gray-text);
+                white-space: nowrap;
         }
 }
 .folder
 {
-        padding-left: 1.5rem;
+        padding-left: 0.5rem;
 }
 
 .heart
 {
-        padding-left: 3.5rem;
+        padding-left: 0.5rem;
 }
 .current-time, .total-time
 {
@@ -394,7 +400,7 @@ footer
 {
         position:absolute;
         height: 4px;
-        left: calc(50% - 40px);
+        right: 110px;
         width: 40px;
         background-color: var(--spotify-color-white);
 }
@@ -402,26 +408,39 @@ footer
 {
         position:absolute;
         height: 4px;
-        left: 50%;
+        right: 10px;
         width: 100px;
         background-color: var(--spotify-color-gray-text);
  }
 
-.fa-circle
+.footer-center .fa-circle
 {
         position: absolute;
         visibility: hidden;
-        left:0%;
+        left: 0;
 }
-.footer-center
+
+.footer-right .fa-circle
 {
-        position: relative;
+        position: absolute;
+        visibility: hidden;
+        right: 0;
 }
-.footer-right
+
+.box-icons-right
 {
-        position: relative;
-        border: 1px solid white;
+        position: absolute;
+        right: 150px;
 }
+.box-icons-left
+{
+        display: flex;
+        border: 1px solid green;
+        margin-left: 1rem;
+}
+
+
+
 /* #endregion utility footer */
 
 /* #region sidebar */
@@ -593,7 +612,58 @@ footer
                 width: calc( 100% / 12 * 3);
                 border: 1px solid greenyellow;
         }
-
+        
+        .current-time
+        {
+                position:absolute;
+                left: calc(50% - 7.5rem);
+        }
+        .total-time
+        {
+                position: absolute;
+                left: calc(50% + 4.5rem);
+        }
+        .box-time-current
+        {
+                position: absolute;
+                left: calc(50% - 5rem);
+                height: 4px;
+                width: 2rem;
+                background-color: var(--spotify-color-white);
+        }
+        .box-time-to-the-end
+        {
+                position: absolute;
+                height: 4px;
+                left: calc( 50% - 3rem);
+                width: 7rem;
+                background-color: var(--spotify-color-gray-text);
+        }
+        .box-icons-left
+        {
+                display: block;
+                border: 1px solid red;
+                margin-left: 0.5rem;
+        }
+        
+        .footer-center
+        {
+                width: 30%;
+        }
+        .footer-right
+        {
+                width: 37%;
+        }
+        .footer-left
+        {
+                width: 33%;
+        }
+        .fa-list-ul, .fa-display, .fa-volume-high
+        {
+                padding-left: 0.1rem;
+                padding-right: 0.1rem;
+        }
+        
 }
 
 /* s */
