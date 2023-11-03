@@ -23,4 +23,55 @@
 {
         background-color: var(--spotify-color-white);
 }
+
+img:hover + .playhover
+{
+        visibility: visible;        
+}
+
+
+.app .label:hover
+{
+        color: var(--spotify-color-white);   
+}
+
+.footer-left .track-name-footer p:hover
+{
+        color: var(--spotify-color-white);
+        text-decoration: underline;  
+}
+
+.footer-left .heart:hover, .footer-left .folder:hover
+{
+        color: var(--spotify-color-white);
+}
+.footer-center .box-time-current:hover
+{
+        background-color: var( --spotify-color-accent);
+}
+.footer-center .box-time-current:hover + .fa-circle
+{
+        left: calc(50% - 5rem);
+        color: var(--spotify-color-white); 
+        visibility: visible;
+        z-index: 100;
+}
+.fa-circle-play:hover
+{
+        transform: scale(1.1);
+}
+
+.footer-right .sound-line-low:hover
+{
+        background-color: var( --spotify-color-accent);
+}
+
+.footer-right .sound-line-low:hover + .fa-circle
+{
+        left: 50%;
+        color: var(--spotify-color-white); 
+        visibility: visible;
+        z-index: 100;    
+}
+
 /*  */

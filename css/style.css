@@ -18,6 +18,7 @@
         --spotify-color-gray-text: #6a6a6a;
         --spotify-color-gray-text-main: #787a7f;
         --spotify-color-gray-home: #d2d2d2;
+        --spotify-dimension-text: 1rem;
 }
 
 .big-container
@@ -69,6 +70,10 @@ body
         font-size: 4rem;
 }
 
+.font-size-0_5
+{
+        font-size: 0.5rem;
+}
 .d-flex
 {
         display: flex;
@@ -277,10 +282,7 @@ main
         visibility: hidden;
 }
 
-img:hover + .playhover
-{
-        visibility: visible;        
-}
+
 
 
 
@@ -310,6 +312,7 @@ img:hover + .playhover
         padding-left: 1rem;
         padding-bottom: 1rem;
 }
+
 /* #endregion main */
 
 /* #region footer */
@@ -344,7 +347,7 @@ footer
         padding-left: 0.5rem;
         & p
         {
-                font-size: 0.6rem;
+                font-size: var(--spotify-dimension-text);
                 color: var(--spotify-color-gray-text);
         }
 }
@@ -359,36 +362,66 @@ footer
 }
 .current-time, .total-time
 {
-        font-size: 0.6rem;
+        font-size: var(--spotify-dimension-text);
 }
-
+.current-time
+{
+        position:absolute;
+        left: calc(50% - 13rem);
+}
+.total-time
+{
+        position: absolute;
+        left: calc(50% + 11rem);
+}
 .box-time-current
 {
-        height: 2px;
-        width: 5%;
+        position: absolute;
+        left: calc(50% - 10rem);
+        height: 4px;
+        width: 5rem;
         background-color: var(--spotify-color-white);
 }
 .box-time-to-the-end
 {
-        height: 2px;
-        width: 20%;
+        position: absolute;
+        height: 4px;
+        left: calc( 50% - 5rem);
+        width: 15rem;
         background-color: var(--spotify-color-gray-text);
 }
 .sound-line-low
 {
-        height: 2px;
-        width: 30px;
+        position:absolute;
+        height: 4px;
+        left: calc(50% - 40px);
+        width: 40px;
         background-color: var(--spotify-color-white);
 }
 .sound-line-hight
 {
-        height: 2px;
-        width: 80px;
+        position:absolute;
+        height: 4px;
+        left: 50%;
+        width: 100px;
         background-color: var(--spotify-color-gray-text);
  }
 
-
-
+.fa-circle
+{
+        position: absolute;
+        visibility: hidden;
+        left:0%;
+}
+.footer-center
+{
+        position: relative;
+}
+.footer-right
+{
+        position: relative;
+        border: 1px solid white;
+}
 /* #endregion utility footer */
 
 /* #region sidebar */
@@ -427,7 +460,7 @@ footer
 .home .label
 {
         position: absolute;
-        font-size: 0.7rem;
+        font-size: var(--spotify-dimension-text);
         left: 3rem;
 }
 
@@ -446,7 +479,7 @@ footer
 .find .label
 {
         position:absolute;
-        font-size: 0.7rem;
+        font-size: var(--spotify-dimension-text);
         left: 3rem;
 }
 
@@ -459,7 +492,7 @@ footer
 .myLybrary .label
 {
         position: absolute;
-        font-size: 0.7rem;
+        font-size: var(--spotify-dimension-text);
         left: 3rem;
 }
 .myLybrary .icon
@@ -496,7 +529,7 @@ footer
 
 .playListName
 {
-        font-size: 0.7rem;
+        font-size: var(--spotify-dimension-text);
         padding: 0.5rem 1rem;
 }
 
@@ -524,7 +557,7 @@ footer
 {
         position: fixed;
         bottom: 5rem;
-        font-size: 0.7rem;
+        font-size: var(--spotify-dimension-text);
         padding: 0.5rem 1rem;
         & .label
         {
@@ -545,13 +578,13 @@ footer
         }
         & .label
         {
-                font-size: 0.7rem;
+                font-size: var(--spotify-dimension-text);
                 padding-left: 0.5rem;
         }
 }
 /* #endregion sidebar */
 
-
+/* #region media-query */
 /* md */
 @media screen and (max-width: 950px)
 {
@@ -619,3 +652,4 @@ footer
                 width: calc( 100% / 3);
         }
 }
+/* #endregion media-query */
