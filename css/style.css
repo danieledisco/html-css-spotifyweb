@@ -19,6 +19,7 @@
         --spotify-color-gray-text-main: #787a7f;
         --spotify-color-gray-home: #d2d2d2;
         --spotify-dimension-text: 1rem;
+        --spotify-dimension-text-mobile: 0.7rem;
 }
 
 .big-container
@@ -79,6 +80,8 @@ body
         display: flex;
 }
 
+
+
 .black-text
 {
         color: var(--spotify-color-black);
@@ -87,6 +90,11 @@ body
 .white-text
 {
         color: var(--spotify-color-white);
+}
+
+.gray-home
+{
+        color: var(--spotify-color-gray-home)
 }
 
 .gray-text
@@ -326,21 +334,18 @@ footer
 {
         height: 100%;
         width: 30%;
-        border: 1px solid white;
 }
 .footer-center
 {
         height: 100%;
         width: 40%;
         position: relative;
-        border: 1px solid white;
 }
 .footer-right
 {
         height: 100%;
         width: 30%;
         position: relative;
-        border: 1px solid white;
 }
 .track-image-footer
 {
@@ -354,7 +359,6 @@ footer
         {
                 font-size: var(--spotify-dimension-text);
                 color: var(--spotify-color-gray-text);
-                white-space: nowrap;
         }
 }
 .folder
@@ -430,12 +434,11 @@ footer
 .box-icons-right
 {
         position: absolute;
-        right: 150px;
+        padding-left: 10px;
 }
 .box-icons-left
 {
         display: flex;
-        border: 1px solid green;
         margin-left: 1rem;
 }
 
@@ -601,6 +604,12 @@ footer
                 padding-left: 0.5rem;
         }
 }
+
+.logo-mobile, .home-mobile, .find-mobile, .myLybrary-mobile, .app-mobile
+{
+        visibility: hidden;
+}
+
 /* #endregion sidebar */
 
 /* #region media-query */
@@ -610,7 +619,7 @@ footer
         .col-3-md
         {
                 width: calc( 100% / 12 * 3);
-                border: 1px solid greenyellow;
+              /*   border: 1px solid greenyellow; */
         }
         
         .current-time
@@ -642,7 +651,6 @@ footer
         .box-icons-left
         {
                 display: block;
-                border: 1px solid red;
                 margin-left: 0.5rem;
         }
         
@@ -672,54 +680,130 @@ footer
         .col-6-s
         {
                 width: calc( 100% / 12 * 6);
-                border: 1px solid red;
+        }
+        .footer-left img
+        {
+                width: 20px;
+        }
+        .track-name-footer
+        {
+                font-size: var(--spotify-dimension-text-mobile);
+        }
+        .track-name-footer p
+        {
+                font-size: var(--spotify-dimension-text-mobile);
+        }
+        .fa-list-ul, .fa-display, .fa-volume-high, .current-time, .total-time
+        {
+                font-size: var(--spotify-dimension-text-mobile);
+        } 
+        .fa-shuffle
+        {
+                padding-left: 0;
+                padding-right: 0.4;
+        }
+        
+        .fa-backward-step, .fa-circle-play, .fa-forward-step, .fa-rotate-right
+        {
+                padding-left: 0.4rem;
+                padding-right: 0.4rem;
         }
 }
 
 /* xs */
-@media screen and (max-width: 510px)
+@media screen and (max-width: 570px)
 {
         .col-6-x
         {
                 width: calc( 100% / 12 * 6);
-                border: 1px solid white;
         }
-        .sidebar .label
+        .sidebar
+        {
+                width: 3rem;
+        }
+        .sidebar .label, .sidebar .logo,  .sidebar .icon, .sidebar .playListName, .sidebar .sub-line-gray, .sidebar h5, .sidebar .plus
         {
                 display: none;
         }
-        .sidebar .icon
-        {
-                display: none;
-        }
-        .sidebar img
-        {
-                display: none;
-        }
-        .sidebar .home
-        {
-                display: none;
-        }
-        .sidebar .playListName
-        {
-                display: none;
-        }
-                
+                       
         .header-main-footer
         {
                 width: calc(100% - 3rem);
         }
-        footer .footer-left
-        {
-                width: calc( 100% / 3);
-        }
-        footer .footer-center
-        {
-                width: calc( 100% / 3);
-        }
         footer .footer-right
         {
-                width: calc( 100% / 3);
+                width: 28%;
+
         }
+        footer .footer-left
+        {
+                width: 28%;
+                margin-left: 12rem;
+        }
+        .sound-line-hight
+        {
+                right: 10px;
+                width: 50px;
+         }
+        
+
+        .sound-line-low
+        {
+                right: 60px;
+                width: 20px;
+                background-color: var(--spotify-color-white);
+        }
+        .logo-mobile
+        {
+                position: absolute;
+                visibility: visible;
+                font-size: 2rem;
+                padding-left: 0.5rem;
+                padding-right: 0.5rem;
+                top: 10px;
+        }
+        .home
+        {
+                border: none;
+        }
+        .home-mobile
+        {
+                position: absolute;
+                visibility: visible;
+                top: 70px;
+                font-size: 1.5rem;
+                padding-left: 0.5rem;
+                padding-right: 0.5rem;
+        }
+        .find-mobile
+        {
+                position: absolute;
+                visibility: visible;
+                top: 110px;
+                font-size: 2rem;
+                padding-left: 0.5rem;
+                padding-right: 0.5rem;                              
+        }
+        .myLybrary-mobile
+        {
+                position: absolute;
+                visibility: visible;
+                top: 150px;
+                font-size: 2.2rem;
+                padding-left: 0.5rem;
+                padding-right: 0.5rem;                              
+        }
+        .app-mobile
+        {
+                position: absolute;
+                visibility: visible;
+                top: 750px; 
+                font-size: 1.2rem;
+                padding-left: 1rem;
+                padding-right: 1rem; 
+                z-index: 100;              
+        }
+ 
+  
 }
 /* #endregion media-query */
