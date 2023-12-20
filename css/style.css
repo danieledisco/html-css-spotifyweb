@@ -610,7 +610,7 @@ footer
 
 /* #region media-query */
 /* md */
-@media screen and (max-width: 950px)
+@media screen and (max-width: 1024px)
 {
         .col-3-md
         {
@@ -664,7 +664,7 @@ footer
 }
 
 /* s */
-@media screen and (max-width: 705px)
+@media screen and (max-width: 768px)
 {
         .col-6-s
         {
@@ -717,7 +717,7 @@ footer
 }
 
 /* xs */
-@media screen and (max-width: 570px)
+@media screen and (max-width: 480px)
 {
         .col-6-x
         {
